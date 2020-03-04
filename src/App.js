@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import homePage from './components/homePage';
+import loginPage from './components/loginPage';
+import dashboard from './components/dashboard'
 
 import { BrowserRouter, Route,Switch} from 'react-router-dom';
 
@@ -10,7 +11,8 @@ class App extends Component {
     return(
     <BrowserRouter>
     <Switch>
-      <Route exact={true} path="/" component={homePage} />
+      <Route exact={true} path="/" component={loginPage} />
+      <Route exact={true} path="/dashboard" component={dashboard} />
       
     </Switch>
 </BrowserRouter>
