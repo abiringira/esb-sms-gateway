@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './images/bk_image.png';
-import appLogo from './images/bk5_image.png';
+import Footer from './footer'
 import  '../App.css'
 
 
@@ -12,7 +12,7 @@ function loginPage() {
     
        <div className="App-card">
        <nav>
-     <img src={appLogo}  alt="logo" />
+     <img src={logo}  alt="logo" />
      </nav>
      </div>
     
@@ -21,15 +21,15 @@ function loginPage() {
       <div className="App-login" >
        
      
-<div class="container" id="container">
+<div className="container" id="container">
 
-	<div class="form-container sign-in-container">
+	<div className="form-container sign-in-container">
 		<form action="#">
 			<h1>Sign in</h1>
 			<div class="social-container">
-				<a href="/" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="/" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="/" class="social"><i class="fab fa-linkedin-in"></i></a>
+				<a href="/" className="social"><i className="fab fa-facebook-f"></i></a>
+				<a href="/" className="social"><i className="fab fa-google-plus-g"></i></a>
+				<a href="/" className="social"><i className="fab fa-linkedin-in"></i></a>
 			</div>
 			<span> use your account</span>
 			<input type="email" placeholder="Email" />
@@ -39,11 +39,11 @@ function loginPage() {
 		</form>
 	</div>
 
-	<div class="overlay-container">
+	<div className="overlay-container">
 
-		<div class="overlay">
+		<div className="overlay">
 			
-			<div class="overlay-panel overlay-right">
+			<div className="overlay-panel overlay-right">
 				<h1>Hello, Developers!</h1>
 				<p>Welcome to sms gateway platform  </p>
 			
@@ -57,15 +57,7 @@ function loginPage() {
         
       </div>
 
-    <div className="App">
-      <footer className="App-header">
-        <img src={logo}  alt="logo" />
-        <p>
-         <code>Notification Service</code> 
-        </p>
-     
-      </footer>
-    </div>
+   <Footer/>
 
     </React.Fragment>
   );

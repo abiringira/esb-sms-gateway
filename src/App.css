@@ -1,5 +1,5 @@
 
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 
 
@@ -18,14 +18,14 @@
     /* transition: 0.3s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
     background-color:#f6f5f7;
-    min-height: 195vh;
+    min-height: 190vh;
     display: flex;
     position: fixed;
-    left: 0;
+    right: 109%;
     bottom: 0;
     width: 100%;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
@@ -54,7 +54,7 @@
 
 .App-header {
   background-color:#034ea2;
-  min-height: 3vh;
+  min-height: 10vh;
   display: flex;
   position: fixed;
   left: 0;
@@ -72,6 +72,12 @@
   color: #034ea2;
 }
 
+.nav-item-button {
+  padding-top: 110px;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -86,11 +92,11 @@
 }
 
 nav {
-  background-color: #eee;
+  background-color: #f6f5f7;
   float: left;
   color: #f2f2f2;
-  text-align: center;
-  padding: 20px 1200px;
+  /* text-align: left; */
+  padding: 20px 2000px;
   text-decoration: none;
   font-size: 17px; 
 }
@@ -100,18 +106,89 @@ nav {
   width: 12%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   /* z-index: 70; Stay on top */
-  top: 0; /* Stay at the top */
+  top: 115px; /* Stay at the top */
   left: 0;
-  bottom: 10;
+  bottom: 0;
   background-color: #034ea2; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20%; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   /* transition: margin-left .5s; */
-  padding: 80px;
+  /* padding: 80px; */
 
 }
 
+.padding {
+  padding-top: 42px;
+}
+
+
+
+.h1-color {
+  color: #034ea2;
+  text-align: center;
+}
+
+.h1-failed-color{
+  color: red;
+  text-align: center;
+}
+
+
+.nav-item {
+  /* display: inline-block; */
+  margin-bottom: 20px;
+  font-size: 17px;
+ 
+}
+
+
+
+
+.nav-ul-list {
+ 
+  bottom: 65%;
+  position: fixed;
+
+}
+
+
+.nav-ul-nav-list {
+ 
+  list-style-type: none;
+ margin: 1px;
+ padding: 1px;
+ overflow: hidden;
+
+ position: fixed;
+ top: 0;
+ width: 100%;
+  
+}
+
+.li-nav-button {
+  
+    border-right: none;
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 15px 17px;
+    text-decoration: none;
+    float: left;
+   
+  
+}
+
+.left-nav {
+  border-right: none;
+  display: block;
+  color: white;
+  text-align: left;
+  padding-top:  47px;
+  
+  text-decoration: none;
+  float: right;
+}
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -119,9 +196,6 @@ nav {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-
-
 
 
 body {
@@ -210,16 +284,48 @@ input {
   border: 1px solid #eee;
 }
 
+.absolute {
+  /* bottom: 0; */
+  top: 115px ;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left:12%;
+ 
+
+  border: 3px solid #034ea2;
+  
+}
+
+
+
 .container {
 	background-color: #fff;
 	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+}
+
+.dashboard-container {
+  background-color: #fff;
+	border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 340px;
+	max-width: 100%;
+	height: 300px;
+}
+
+.column-pad {
+
+  float: left;
 }
 
 .form-container {
@@ -292,7 +398,7 @@ input {
 	left: -100%;
 	height: 100%;
 	width: 200%;
-  	transform: translateX(0);
+  transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
 
@@ -386,4 +492,19 @@ footer i {
 footer a {
     color: #034ea2;
     text-decoration: none;
+}
+
+.column {
+  float: left;
+  right: 900px;
+  width: 33.33%;
+  padding: 40px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
