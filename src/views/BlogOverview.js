@@ -35,7 +35,7 @@ const BlogOverview = ({ smallStats }) => (
     </Row>
 
     <Row>
-      {/* Users Overview */}
+      {/* Notifications Overview */}
       <Col lg="8" md="12" sm="12" className="mb-4">
         <UsersOverview />
       </Col>

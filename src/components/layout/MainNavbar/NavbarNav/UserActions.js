@@ -34,6 +34,11 @@ export default class UserActions extends React.Component {
           />{" "}
           <span className="d-none d-md-inline-block">Sierra Brooks</span>
         </DropdownToggle> */}
+         <img
+            className="user-avatar"
+            src={require("./../../../../images/avatars/bk5_image.png")}
+            alt="User Avatar"
+          />
        
       </NavItem>
     );

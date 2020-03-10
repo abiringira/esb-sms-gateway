@@ -119,7 +119,7 @@ UsersByDevice.defaultProps = {
         ]
       }
     ],
-    labels: ["Desktop", "Tablet", "Mobile"]
+    labels: ["Ikofi", "IB", "Igurize"]
   }
 };
 
