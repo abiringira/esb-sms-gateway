@@ -97,14 +97,7 @@ class UsersOverview extends React.Component {
             <Col sm="6" className="d-flex mb-2 mb-sm-0">
               <RangeDatePicker />
             </Col>
-            <Col>
-              <Button
-                size="sm"
-                className="d-flex btn-white ml-auto mr-auto ml-sm-auto mr-sm-0 mt-3 mt-sm-0"
-              >
-                View Full Report &rarr;
-              </Button>
-            </Col>
+          
           </Row>
           <canvas
             height="120"

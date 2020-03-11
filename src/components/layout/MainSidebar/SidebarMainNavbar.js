@@ -33,16 +33,16 @@ class SidebarMainNavbar extends React.Component {
             <div className="d-table m-auto">
               <img
                 id="main-logo"
-                className="d-inline-block align-top mr-1"
-                style={{ maxWidth: "25px" }}
-                src={require("../../../images/shards-dashboards-logo.svg")}
+                // className="d-inline-block align-top mr-1"
+                style={{ maxWidth: "210px" }}
+                src={require("../../../images/avatars/bk6_image.png")}
                 alt="Notification Dashboard"
               />
-              {!hideLogoText && (
+              {/* {!hideLogoText && (
                 <span className="d-none d-md-inline ml-1">
                   Notification Dashboard
                 </span>
-              )}
+              )} */}
             </div>
           </NavbarBrand>
           {/* eslint-disable-next-line */}
