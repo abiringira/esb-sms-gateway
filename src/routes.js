@@ -25,11 +25,11 @@ export default [
     layout: DefaultLayout,
     component: BlogOverview
   },
-  // {
-  //   path: "/user-profile-lite",
-  //   layout: DefaultLayout,
-  //   component: UserProfileLite
-  // },
+  {
+    path: "/user-profile-lite",
+    layout: DefaultLayout,
+    component: UserProfileLite
+  },
   {
     path: "/add-new-post",
     layout: DefaultLayout,

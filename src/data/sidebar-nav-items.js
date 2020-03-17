@@ -22,11 +22,11 @@ export default function() {
       to: "/components-overview",
     },
     
-    // {
-    //   title: "Users",
-    //   htmlBefore: '<i class="material-icons">person</i>',
-    //   to: "/user-profile-lite",
-    // },
+    {
+      title: "Users",
+      htmlBefore: '<i class="material-icons">person</i>',
+      to: "/user-profile-lite",
+    },
     
   ];
 }
