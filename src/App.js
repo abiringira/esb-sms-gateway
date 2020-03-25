@@ -17,11 +17,19 @@ export default () => (
             path={route.path}
             exact={route.exact}
             component={withTracker(props => {
+              if(route.path === "/login")  {
               return (
-                <route.layout {...props}>
+              
                   <route.component {...props} />
-                </route.layout>
-              );
+              
+              )} else {
+                return (
+                  <route.layout {...props}>
+                    <route.component {...props} />
+                  </route.layout>
+                );
+
+              }
             })}
           />
         );

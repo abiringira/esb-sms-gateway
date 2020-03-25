@@ -27,6 +27,12 @@ export default function() {
       htmlBefore: '<i class="material-icons">person</i>',
       to: "/user-profile-lite",
     },
+
+    {
+      title: "Logout",
+      htmlBefore: '<i class="material-icons">rowing</i>',
+      to: "/login",
+    },
     
   ];
 }
