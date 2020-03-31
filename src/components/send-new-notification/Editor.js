@@ -8,11 +8,11 @@ import "../../assets/quill.css";
 const Editor = () => (
   <Card small className="mb-3">
     <CardBody>
-      <Form className="add-new-post">
+      <Form className="send-new-notification">
       <label htmlFor="feEmailAddress">Recipient Number :</label>
         <FormInput size="lg" className="mb-3" placeholder="0782647985" />
         <label htmlFor="feEmailAddress">Message :</label>
-        <ReactQuill className="add-new-post__editor mb-1" />
+        <ReactQuill className="send-new-notification__editor mb-1" />
       </Form>
     </CardBody>
     <Button type="submit">Send Notification</Button>

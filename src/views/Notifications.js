@@ -3,10 +3,15 @@ import { Container, Row, Col, Card, CardHeader, CardBody } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
 import NavbarSearch from '../components/layout/MainNavbar/NavbarSearch.js';
-import List from '../controllers/List';
 
 
-const Tables = () => (
+
+const Notifications = ( {Notifications}) => {
+
+  return(
+
+ 
+
   <Container fluid className="main-content-container px-4">
     {/* Page Header */}
     <Row noGutters className="page-header py-4">
@@ -20,7 +25,7 @@ const Tables = () => (
           <CardHeader className="border-bottom">
             <h6 className="m-0">All Notifications</h6>
           </CardHeader>
-          {List.map((list) => (
+          {/* {Notifications.map((list) => ( */}
           <CardBody className="p-0 pb-3">
             <table className="table mb-0">
               <thead className="bg-light">
@@ -53,19 +58,20 @@ const Tables = () => (
               </thead>
               <tbody>
                 <tr>
-                  <td>{list._id}</td>
-          <td>{list.senderId.name}</td>
-          <td>{list.senderType}</td>
-                  <td>{list.recipient}</td>
-                  <td>{list.type}</td>
-                  <td>{list.message}</td>
-                  <td>{list.status}</td>
-                  <td>{list.apiResponse}</td>
+                  <td>list._id</td>
+          <td>list.senderId.name</td>
+          <td>list.senderType</td>
+                  <td>list.recipient</td>
+                  <td>list.type</td>
+                  <td>list.message</td>
+                  <td>list.status</td>
+                  <td>list.apiResponse</td>
                 </tr>
               </tbody>
             </table>
           </CardBody>
-             ))}
+             
+             {/* )} */}
         </Card>
       </Col>
     </Row>
@@ -140,6 +146,7 @@ const Tables = () => (
       </Col>
     </Row>
   </Container>
-);
+ )
+} ;
 
-export default Tables;
+export default Notifications;

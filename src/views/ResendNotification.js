@@ -11,11 +11,11 @@ import {
 
 import PageTitle from "../components/common/PageTitle";
 
-import CompleteFormExample from "../components/components-overview/CompleteFormExample";
+import CompleteFormExample from "../components/resend-notification/CompleteFormExample";
 
 
 
-const ComponentsOverview = () => (
+const ResendNotification = () => (
  
    
     <Container fluid className="main-content-container px-4 pb-4">
@@ -49,4 +49,4 @@ const ComponentsOverview = () => (
  
 );
 
-export default ComponentsOverview;
+export default ResendNotification;

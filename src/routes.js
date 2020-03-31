@@ -5,13 +5,12 @@ import { Redirect } from "react-router-dom";
 import { DefaultLayout } from "./layouts";
 
 // Route Views
-import BlogOverview from "./views/BlogOverview";
-import UserProfileLite from "./views/UserProfileLite";
-import AddNewPost from "./views/AddNewPost";
+import Dashboard from "./views/Dashboard";
+import Users from "./views/Users";
+import SendNewNotification from "./views/SendNewNotification";
 import Errors from "./views/Errors";
-import ComponentsOverview from "./views/ComponentsOverview";
-import Tables from "./views/Tables";
-import BlogPosts from "./views/BlogPosts";
+import ResendNotification from "./views/ResendNotification";
+import Notifications from "./views/Notifications";
 import login from "./views/Login";
 
 export default [
@@ -27,19 +26,19 @@ export default [
     component: login
   },
   {
-    path: "/blog-overview",
+    path: "/dashboard",
     layout: DefaultLayout,
-    component: BlogOverview
+    component: Dashboard
   },
   {
-    path: "/user-profile-lite",
+    path: "/users",
     layout: DefaultLayout,
-    component: UserProfileLite
+    component: Users
   },
   {
-    path: "/add-new-post",
+    path: "/send-new-notification",
     layout: DefaultLayout,
-    component: AddNewPost
+    component: SendNewNotification
   },
   {
     path: "/errors",
@@ -47,18 +46,14 @@ export default [
     component: Errors
   },
   {
-    path: "/components-overview",
+    path: "/resend-notification",
     layout: DefaultLayout,
-    component: ComponentsOverview
+    component: ResendNotification
   },
   {
-    path: "/tables",
+    path: "/notifications",
     layout: DefaultLayout,
-    component: Tables
+    component: Notifications
   },
-  {
-    path: "/blog-posts",
-    layout: DefaultLayout,
-    component: BlogPosts
-  }
+  
 ];

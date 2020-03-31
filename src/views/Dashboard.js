@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "shards-react";
 
-import PageTitle from "./../components/common/PageTitle";
-import SmallStats from "./../components/common/SmallStats";
-import UsersOverview from "./../components/blog/UsersOverview";
-import UsersByDevice from "./../components/blog/UsersByDevice";
+import PageTitle from "../components/common/PageTitle";
+import SmallStats from "../components/common/SmallStats";
+import UsersOverview from "../components/blog/UsersOverview";
+import UsersByDevice from "../components/blog/UsersByDevice";
 
 
-const BlogOverview = ({ smallStats }) => (
+const Dashboard = ({ smallStats }) => (
   <Container fluid className="main-content-container px-4">
     {/* Page Header */}
     <Row noGutters className="page-header py-4">
@@ -54,14 +54,14 @@ const BlogOverview = ({ smallStats }) => (
   </Container>
 );
 
-BlogOverview.propTypes = {
+Dashboard.propTypes = {
   /**
    * The small stats dataset.
    */
   smallStats: PropTypes.array
 };
 
-BlogOverview.defaultProps = {
+Dashboard.defaultProps = {
   smallStats: [
     {
       label: "Total",
@@ -159,4 +159,4 @@ BlogOverview.defaultProps = {
   ]
 };
 
-export default BlogOverview;
+export default Dashboard;

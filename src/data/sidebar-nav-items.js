@@ -2,30 +2,30 @@ export default function() {
   return [
     {
       title: "Notification Dashboard",
-      to: "/blog-overview",
+      to: "/dashboard",
       htmlBefore: '<i class="material-icons">edit</i>',
       htmlAfter: ""
     },
     {
       title: "Send Notification",
       htmlBefore: '<i class="material-icons">note_add</i>',
-      to: "/add-new-post",
+      to: "/send-new-notification",
     },
     {
       title: "Notifications",
       htmlBefore: '<i class="material-icons">table_chart</i>',
-      to: "/tables",
+      to: "/notifications",
     },
     {
       title: "Resend Notification",
       htmlBefore: '<i class="material-icons">view_module</i>',
-      to: "/components-overview",
+      to: "/resend-notification",
     },
     
     {
       title: "Users",
       htmlBefore: '<i class="material-icons">person</i>',
-      to: "/user-profile-lite",
+      to: "/users",
     },
 
     {
