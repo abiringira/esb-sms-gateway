@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component} from "react";
 import { Container, Row, Col, Card, CardHeader, CardBody } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
@@ -6,7 +6,33 @@ import NavbarSearch from '../components/layout/MainNavbar/NavbarSearch.js';
 
 
 
-const Notifications = ( {Notifications}) => {
+class  Notifications extends Component {
+
+  state = {
+    notifications: []
+  }
+
+
+  componentDidMount() {
+    fetch('http://localhost:7778/v1/notification',{ 
+      method: 'GET',
+      headers: {  
+      'Authorization': 'Bearer 76c274f6-948b-4b7a-b263-60114b227df4',
+ 
+    }})
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({ notifications:  data })
+      console.log(this.state.notifications);
+     
+    })
+  
+  }
+ 
+   
+
+
+  render() {
 
   return(
 
@@ -25,7 +51,7 @@ const Notifications = ( {Notifications}) => {
           <CardHeader className="border-bottom">
             <h6 className="m-0">All Notifications</h6>
           </CardHeader>
-          {/* {Notifications.map((list) => ( */}
+          {this.state.notifications.map((list) => (
           <CardBody className="p-0 pb-3">
             <table className="table mb-0">
               <thead className="bg-light">
@@ -71,7 +97,7 @@ const Notifications = ( {Notifications}) => {
             </table>
           </CardBody>
              
-             {/* )} */}
+           ) )}
         </Card>
       </Col>
     </Row>
@@ -147,6 +173,7 @@ const Notifications = ( {Notifications}) => {
     </Row>
   </Container>
  )
-} ;
+}
+ } ;
 
 export default Notifications;
