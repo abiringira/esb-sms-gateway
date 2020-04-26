@@ -3,7 +3,7 @@
 
 * Install dependencies by running `yarn` or `npm install`.
 * Run `yarn start` or `npm run start` to start the local development server.
-* 😎 **That's it!** You're ready to start building awesome dashboards.
+* 😎 **That's it!** You're ready to https://dev.azure.com/BKDF/Wallet/_git/wallet-servicestart building awesome dashboards.
 
 <br />
 
@@ -66,3 +66,4 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 ### Changelog
 
 Please check out the [CHANGELOG](CHANGELOG.md).
+https://dev.azure.com/BKDF/Wallet/_git/wallet-servicehttps://dev.azure.com/BKDF/Wallet/_git/wallet-service

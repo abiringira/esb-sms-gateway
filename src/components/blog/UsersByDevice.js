@@ -57,7 +57,7 @@ class UsersByDevice extends React.Component {
           <canvas
             height="220"
             ref={this.canvasRef}
-            className="blog-users-by-device m-auto"
+            className="blog-Application-by-device m-auto"
           />
         </CardBody>
         <CardFooter className="border-top">

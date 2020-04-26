@@ -158,7 +158,7 @@ CountryReports.propTypes = {
 };
 
 CountryReports.defaultProps = {
-  title: "Users by Country",
+  title: "Application by Country",
   countries: [
     {
       flag: require("../../images/flags/flag-us.png"),
@@ -186,7 +186,7 @@ CountryReports.defaultProps = {
     }
   ],
   mapsData: [
-    ["Country", "Users"],
+    ["Country", "Application"],
     ["United States", 12219],
     ["United Kingdom", 11192],
     ["Australia", 9291],

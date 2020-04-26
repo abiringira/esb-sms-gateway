@@ -6,7 +6,7 @@ import { DefaultLayout } from "./layouts";
 
 // Route Views
 import Dashboard from "./views/Dashboard";
-import Users from "./views/Users";
+import Application from "./views/Application";
 import SendNewNotification from "./views/SendNewNotification";
 import Errors from "./views/Errors";
 import ResendNotification from "./views/ResendNotification";
@@ -31,9 +31,9 @@ export default [
     component: Dashboard
   },
   {
-    path: "/users",
+    path: "/Application",
     layout: DefaultLayout,
-    component: Users
+    component: Application
   },
   {
     path: "/send-new-notification",

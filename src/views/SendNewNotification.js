@@ -1,11 +1,31 @@
-import React from "react";
+import React,{Component} from "react";
 import { Container, Row, Col } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
 import Editor from "../components/send-new-notification/Editor";
 
 
-const SendNewNotification = () => (
+class SendNewNotification extends Component   {
+
+  
+
+  // constructor(props) {
+  //   super(props)
+    
+  // }
+
+  
+ 
+
+
+
+
+  render() {
+
+    return(
+
+  
+
   <Container fluid className="main-content-container px-4 pb-4">
     {/* Page Header */}
     <Row noGutters className="page-header py-4">
@@ -21,6 +41,9 @@ const SendNewNotification = () => (
      
     </Row>
   </Container>
-);
+    )
+}
+
+};
 
 export default SendNewNotification;

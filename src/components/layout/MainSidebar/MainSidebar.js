@@ -2,11 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Col } from "shards-react";
-
 import SidebarMainNavbar from "./SidebarMainNavbar";
 import SidebarSearch from "./SidebarSearch";
 import SidebarNavItems from "./SidebarNavItems";
-
 import { Store } from "../../../flux";
 
 class MainSidebar extends React.Component {

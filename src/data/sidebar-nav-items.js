@@ -7,25 +7,26 @@ export default function() {
       htmlAfter: ""
     },
     {
-      title: "Send Notification",
-      htmlBefore: '<i class="material-icons">note_add</i>',
-      to: "/send-new-notification",
-    },
-    {
       title: "Notifications",
       htmlBefore: '<i class="material-icons">table_chart</i>',
       to: "/notifications",
     },
     {
-      title: "Resend Notification",
-      htmlBefore: '<i class="material-icons">view_module</i>',
-      to: "/resend-notification",
+      title: "Send Notification",
+      htmlBefore: '<i class="material-icons">note_add</i>',
+      to: "/send-new-notification",
     },
+   
+    // {
+    //   title: "Resend Notification",
+    //   htmlBefore: '<i class="material-icons">view_module</i>',
+    //   to: "/resend-notification",
+    // },
     
     {
-      title: "Users",
+      title: "Application",
       htmlBefore: '<i class="material-icons">person</i>',
-      to: "/users",
+      to: "/Application",
     },
 
     {
